@@ -130,3 +130,6 @@ dmypy.json
 client_secret.json
 token.pickle
 config.py
+
+.vscode
+config_sample.py
