@@ -87,6 +87,9 @@ def main():
         for row in mapd_values
     ]
 
+    # print(mailaddr_and_body)
+    # exit()
+
     # メール下書きを生成する
     sender = config.sendmail_from
     subject = config.sendmail_subject
@@ -96,7 +99,7 @@ def main():
 
         to = addr_and_body["email"]
         message_text = addr_and_body["body"]
-        message = MIMEText(message_text, "plane", "utf-8")
+        message = MIMEText(message_text, _charset="utf-8")
         message["to"] = to
         message["from"] = sender
         message["subject"] = subject
