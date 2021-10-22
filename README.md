@@ -6,6 +6,8 @@ PyCon mini Shizuokaで使う、メール送付下書き生成用スクリプト
 
 - Python3.7以降
 - `pip install -r requirements.txt` にてパッケージインストール
+- クライアントシークレットが必要です。Google Cloud Consoleで作成してください。
+  - フローはoAuth2のブラウザ認証、インストール済みアプリで行ってます。
 - 利用するGmailアカウントにて、oAuth2認証が必須: 対象のスコープはスクリプト内の`SCOPES`を参照してください
   - Gmail API
   - Google Sheet API
